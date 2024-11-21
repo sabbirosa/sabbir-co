@@ -94,7 +94,7 @@ export const AboutSection = () => {
                   ))}
                 </div>
               </Card>
-              <Card className="h-[320px] relative mb-96 md:col-span-2 lg:col-span-1">
+              <Card className="h-[320px] relative md:col-span-2 lg:col-span-1">
                 <Image
                   className="h-full w-full object-cover"
                   src={mapImage}
