@@ -25,6 +25,7 @@ export const ProjectsSection = () => {
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {portfolioProjects.map((project, index) => (
             <div
+              key={index}
               className="sticky top-0"
               style={{
                 top: `calc(64px + ${index * 40}px`,
