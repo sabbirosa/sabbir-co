@@ -21,24 +21,24 @@ import {
 
 import { FaJava } from "react-icons/fa6";
 
-const TechStacks: Record<string, IconType> = {
-  react: SiReact,
-  nextjs: SiNextdotjs,
-  express: SiExpress,
-  nodejs: SiNodedotjs,
-  flask: SiFlask,
-  tailwindcss: SiTailwindcss,
-  javascript: SiJavascript,
-  typescript: SiTypescript,
-  mongodb: SiMongodb,
-  docker: SiDocker,
-  mysql: SiMysql,
-  postgresql: SiPostgresql,
-  java: FaJava,
-  bootstrap: SiBootstrap,
-  html: SiHtml5,
-  css: SiCss3,
-  python: SiPython,
+const TechStacks: Record<string, { name: string; icon: IconType }> = {
+  react: { name: "React", icon: SiReact },
+  nextjs: { name: "Next.js", icon: SiNextdotjs },
+  express: { name: "Express", icon: SiExpress },
+  nodejs: { name: "Node.js", icon: SiNodedotjs },
+  flask: { name: "Flask", icon: SiFlask },
+  tailwindcss: { name: "Tailwind CSS", icon: SiTailwindcss },
+  javascript: { name: "JavaScript", icon: SiJavascript },
+  typescript: { name: "TypeScript", icon: SiTypescript },
+  mongodb: { name: "MongoDB", icon: SiMongodb },
+  docker: { name: "Docker", icon: SiDocker },
+  mysql: { name: "MySQL", icon: SiMysql },
+  postgresql: { name: "PostgreSQL", icon: SiPostgresql },
+  java: { name: "Java", icon: FaJava },
+  bootstrap: { name: "Bootstrap", icon: SiBootstrap },
+  html: { name: "HTML5", icon: SiHtml5 },
+  css: { name: "CSS3", icon: SiCss3 },
+  python: { name: "Python", icon: SiPython },
 };
 
 export default TechStacks;

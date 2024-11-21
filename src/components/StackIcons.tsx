@@ -12,7 +12,7 @@ export default function StackIcons({ stack }: StackIconsProps) {
   return (
     <div className="relative flex items-center">
       {stack.map((tech, index) => {
-        const Icon = techStackIcons[tech];
+        const Icon = techStackIcons[tech].icon;
         return (
           <div
             key={index}
