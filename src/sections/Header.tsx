@@ -9,8 +9,13 @@ export const Header = () => {
   ];
 
   return (
-    <header className="flex justify-center items-center fixed top-3 w-full z-10">
-      <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
+    <header className="flex justify-center items-center fixed top-3 w-full z-10 gap-2">
+      <div className="p-1.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
+        <Link href="/">
+          <p className="text-xl font-bold text-white">Co</p>
+        </Link>
+      </div>
+      <nav className="flex gap-1 p-1 border border-white/15 rounded-full bg-white/10 backdrop-blur">
         {navItems.map((item, index) => {
           return index === navItems.length - 1 ? (
             <Link
