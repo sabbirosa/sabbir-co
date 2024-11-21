@@ -3,9 +3,9 @@ import Link from "next/link";
 export const Header = () => {
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/projects", label: "Projects" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
+    { href: "#projects", label: "Projects" },
+    { href: "#about", label: "About" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (

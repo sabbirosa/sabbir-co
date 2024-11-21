@@ -5,6 +5,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import memojiImage from "@/assets/images/memoji-computer.png";
 import HeroOrbit from "@/components/HeroOrbit";
 import Image from "next/image";
+import Link from "next/link";
 
 export const HeroSection = () => {
   return (
@@ -115,14 +116,18 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-            <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span>👋🏻</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
-          </button>
+          <Link href={"#projects"} className="z-10">
+            <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+              <span className="font-semibold">Explore My Work</span>
+              <ArrowDown className="size-4" />
+            </button>
+          </Link>
+          <Link href={"#contact"} className="z-10">
+            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+              <span>👋🏻</span>
+              <span className="font-semibold">Let&apos;s Connect</span>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

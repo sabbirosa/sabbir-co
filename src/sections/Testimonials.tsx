@@ -8,7 +8,7 @@ const testimonials = ClientTestimonials;
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-16 lg:py-24">
+    <section id="testimonials" className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
           {...{
