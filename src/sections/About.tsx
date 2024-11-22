@@ -1,15 +1,19 @@
 "use client";
 
-import bookImage from "@/assets/images/book-cover.png";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import Card from "@/components/Card";
 import CardHeader from "@/components/CardHeader";
 import SectionHeader from "@/components/SectionHeader";
 import ToolboxItems from "@/components/ToolboxItems";
+import Books from "@/data/books";
 import Hobbies from "@/data/hobbies";
 import TechStacks from "@/data/stacks";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+
+const books = Books;
 
 const toolboxItems = Object.entries(TechStacks).map(
   ([key, { name, icon }]) => ({
@@ -20,10 +24,18 @@ const toolboxItems = Object.entries(TechStacks).map(
 
 const hobbies = Hobbies;
 
-import Image from "next/image";
-import { useRef } from "react";
 export const AboutSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const constraintsRef = useRef(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % books.length);
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
 
   return (
     <section id="about" className="py-20 lg:py-28">
@@ -45,10 +57,42 @@ export const AboutSection = () => {
                   description: "Explore the books shaping my perspectives.",
                 }}
               />
-              <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={bookImage} alt="Book Cover" />
+              <div className="relative w-40 h-60 mx-auto mt-2 md:mt-0 overflow-hidden">
+                <div
+                  className="flex transition-transform duration-1000"
+                  style={{
+                    transform: `translateX(-${currentIndex * 100}%)`,
+                  }}
+                >
+                  {books.map((book, index) => (
+                    <div
+                      key={index}
+                      className="flex-shrink-0 w-full h-full flex flex-col items-center"
+                    >
+                      <Image
+                        src={book.image.src}
+                        alt={book.title}
+                        width={150}
+                        height={200}
+                        className="object-cover"
+                      />
+                      <p className="mt-2 text-center text-sm">{book.title}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 flex gap-2">
+                  {books.map((_, index) => (
+                    <div
+                      key={index}
+                      className={`w-2.5 h-2.5 rounded-full ${
+                        currentIndex === index ? "bg-blue-500" : "bg-gray-300"
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
             </Card>
+
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
                 {...{

@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import SiteLogo from "/public/sabbir-co.svg";
 export const Header = () => {
   const navItems = [
     { href: "/", label: "Home" },
@@ -12,9 +12,21 @@ export const Header = () => {
     <header className="flex justify-center items-center fixed top-3 w-full z-10 gap-2">
       <div className="p-1.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
         <Link href="/">
-          <p className="text-xl font-bold text-white">Co</p>
+          <>
+            {/* Render the SVG with the gradient fill */}
+            <SiteLogo className="size-8 fill-[url(#site-logo-gradient)]" />
+
+            {/* Define the gradient */}
+            <svg className="size-0 absolute">
+              <linearGradient id="site-logo-gradient">
+                <stop offset="0%" stopColor="#3B82F6" />
+                <stop offset="100%" stopColor="#6366F1" />
+              </linearGradient>
+            </svg>
+          </>
         </Link>
       </div>
+
       <nav className="flex gap-1 p-1 border border-white/15 rounded-full bg-white/10 backdrop-blur">
         {navItems.map((item, index) => {
           return index === navItems.length - 1 ? (
