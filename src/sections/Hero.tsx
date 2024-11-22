@@ -2,7 +2,7 @@ import ArrowDown from "@/assets/icons/arrow-down.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import StarIcon from "@/assets/icons/star.svg";
 import grainImage from "@/assets/images/grain.jpg";
-import memojiImage from "@/assets/images/memoji-computer.png";
+import memojiImage from "@/assets/images/memoji-computer-zd.png";
 import HeroOrbit from "@/components/HeroOrbit";
 import Image from "next/image";
 import Link from "next/link";
@@ -91,7 +91,7 @@ export const HeroSection = () => {
       <div className="container">
         <div className="flex flex-col items-center">
           <Image
-            className="size-[100px]"
+            className="size-[100px] z-10"
             src={memojiImage}
             alt="A person peeking from behind the laptop"
           />

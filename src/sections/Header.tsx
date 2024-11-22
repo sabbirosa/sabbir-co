@@ -1,5 +1,7 @@
 import Link from "next/link";
-import SiteLogo from "/public/sabbir-co.svg";
+// import SiteLogo from "/public/sabbir-co.svg";
+import SiteLogo from "@/app/favicon.ico";
+import Image from "next/image";
 export const Header = () => {
   const navItems = [
     { href: "/", label: "Home" },
@@ -13,16 +15,15 @@ export const Header = () => {
       <div className="p-1.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
         <Link href="/">
           <>
-            {/* Render the SVG with the gradient fill */}
-            <SiteLogo className="size-8 fill-[url(#site-logo-gradient)]" />
+            {/* <SiteLogo className="size-8 fill-[url(#site-logo-gradient)]" />
 
-            {/* Define the gradient */}
             <svg className="size-0 absolute">
               <linearGradient id="site-logo-gradient">
                 <stop offset="0%" stopColor="#3B82F6" />
                 <stop offset="100%" stopColor="#6366F1" />
               </linearGradient>
-            </svg>
+            </svg> */}
+            <Image src={SiteLogo} alt="Sabbir" width={32} height={32} />
           </>
         </Link>
       </div>
