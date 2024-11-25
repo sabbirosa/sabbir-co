@@ -15,7 +15,7 @@ export const TestimonialsSection = () => {
             title: "What Clients Say About Me",
             eyebrow: "Happy Clients",
             description:
-              "Don't just take my word for it. See what my clients have to say about me.",
+              "Stories from those who've experienced the magic. Let their words inspire you.",
           }}
         />
         <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">

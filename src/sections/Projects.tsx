@@ -19,7 +19,7 @@ export const ProjectsSection = () => {
             title: "Featured Projects",
             eyebrow: "Real-world Results",
             description:
-              "See how I've transformed concepts into engaging digital experiences.",
+              "Dive into a world of innovation. Explore how ideas came to life through my craft.",
           }}
         />
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
