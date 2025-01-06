@@ -109,8 +109,8 @@ export const HeroSection = () => {
             Crafting Impactful Digital Solutions
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            I&apos;m a software engineer passionate about solving complex
-            problems and creating intuitive user experiences. Currently,
+            I&apos;m an aspiring software engineer passionate about solving
+            complex problems and creating intuitive user experiences. Currently,
             I&apos;m focused on building scalable, cutting-edge products at
             @Zaylen Digital.
           </p>
