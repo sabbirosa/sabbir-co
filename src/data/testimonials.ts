@@ -1,38 +1,38 @@
 import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
 import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
+// import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 
 const ClientTestimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    name: "Md. Enayet Chowdhury",
+    position: "Graduate Research Assistant @ UT Austin",
+    text: "Sabbir is an exceptionally diligent professional. He built my personal website from scratch and turned it into something I'm genuinely proud of. His balance of design intuition and technical precision is rare. I wholeheartedly recommend him for any web project.",
     avatar: memojiAvatar1,
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
+    name: "Fatema Tuz Zohra Diba",
+    position: "Founder @ Meraki",
+    text: "Sabbir translated our vision into a stunning portfolio website for our creative agency. His communication, responsiveness, and attention to user experience were top-notch. He's reliable, fast, and truly understands the Bangladeshi design sensibility.",
     avatar: memojiAvatar2,
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
+    name: "Nafis Sadique Niloy",
+    position: "President @ BUCC",
+    text: "Our club's entire digital presence was revamped thanks to Sabbir's work. The BUCC Portal has streamlined event management, member onboarding, and even RFID-based attendance — all handled beautifully by him. A dependable and skilled developer.",
     avatar: memojiAvatar3,
   },
+  // {
+  //   name: "Fariha Zaman",
+  //   position: "Community Organizer @ Uddyog",
+  //   text: "Sabbir helped us launch Uddyog, a community-based platform for social initiatives. From authentication to event rating systems, he handled it all with care and efficiency. His work is empowering local changemakers through technology.",
+  //   avatar: memojiAvatar4,
+  // },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
-  },
-  {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    name: "Sultan Mehedi Masud",
+    position: "Software Developer & Project R Collaborator",
+    text: "Sabbir's backend and frontend contributions to Project R made a significant impact. He handled critical features like dynamic dashboards and role-based access with great professionalism. Always helpful, always reliable.",
     avatar: memojiAvatar5,
   },
 ];

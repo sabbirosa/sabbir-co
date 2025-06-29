@@ -45,6 +45,11 @@ export const ProjectsSection = () => {
                     <h3 className="font-serif text-2xl md:text-4xl mt-2 md:mt-5">
                       {project.title}
                     </h3>
+                    {project.description && (
+                      <p className="text-white/70 mt-2 md:mt-3">
+                        {project.description}
+                      </p>
+                    )}
                     <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                     <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                       {project.results.map((result, index) => (
@@ -66,6 +71,7 @@ export const ProjectsSection = () => {
                       {project.liveLink && (
                         <Link
                           href={project.liveLink}
+                          target="_blank"
                           className="bg-white text-gray-950 h-12 px-6 rounded-xl font-semibold inline-flex items-center gap-2"
                         >
                           <span>Live Link</span>
@@ -75,6 +81,7 @@ export const ProjectsSection = () => {
                       {project.sourceCode && (
                         <Link
                           href={project.sourceCode}
+                          target="_blank"
                           className="bg-gray-700 text-white h-12 px-6 rounded-xl font-semibold inline-flex items-center gap-2"
                         >
                           <span>Source Code</span>

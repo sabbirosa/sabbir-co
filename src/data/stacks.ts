@@ -5,10 +5,14 @@ import {
   SiCss3,
   SiDocker,
   SiExpress,
+  SiFirebase,
   SiFlask,
+  SiFramer,
   SiHtml5,
   SiJavascript,
+  SiJquery,
   SiMongodb,
+  SiMongoose,
   SiMysql,
   SiNextdotjs,
   SiNodedotjs,
@@ -39,6 +43,10 @@ const TechStacks: Record<string, { name: string; icon: IconType }> = {
   html: { name: "HTML5", icon: SiHtml5 },
   css: { name: "CSS3", icon: SiCss3 },
   python: { name: "Python", icon: SiPython },
+  firebase: { name: "Firebase", icon: SiFirebase },
+  framer: { name: "Framer Motion", icon: SiFramer },
+  mongoose: { name: "Mongoose", icon: SiMongoose },
+  jquery: { name: "jQuery", icon: SiJquery },
 };
 
 export default TechStacks;
